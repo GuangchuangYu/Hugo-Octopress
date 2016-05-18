@@ -33,6 +33,9 @@
       <a class="basic-alignment right" href="{{ .Permalink }}" title="{{ .LinkTitle }}">{{ .LinkTitle }}</a>
     {{ end }}
   </p>
+
+  {{ partial "duoshuo.html" . }}
+  
   {{ if isset .Site.Params "disqusShortname" }}
     {{ if not (eq .Params.comments false) }}
       {{ partial "disqus.html" . }}

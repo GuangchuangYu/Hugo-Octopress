@@ -23,7 +23,18 @@
           {{ if or (and (isset .Params "toc") (eq .Params.toc true)) (and (not (isset .Params "toc")) (eq .Site.Params.tableOfContents true)) }}
             {{ $.Scratch.Get "pagetoc" }}
           {{ end }}
-          {{ .Content }}
+    <span class='st_twitter_hcount' displayText='Tweet'></span>
+    <span class='st_facebook_hcount' displayText='Facebook'></span>
+    <span class='st_sina_hcount' displayText='Sina'></span>
+    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+        
+    {{ .Content }}
+
+    
+    <span class='st_twitter_hcount' displayText='Tweet'></span>
+    <span class='st_facebook_hcount' displayText='Facebook'></span>
+    <span class='st_sina_hcount' displayText='Sina'></span>
+    <span class='st_linkedin_hcount' displayText='LinkedIn'></span>
         </div>
         {{ partial "post_footer.html" . }}
       </article>
