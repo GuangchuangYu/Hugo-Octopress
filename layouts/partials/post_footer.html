@@ -34,13 +34,9 @@
     {{ end }}
   </p>
 
-  
-  <img src="//guangchuangyu.github.io/blog_images/biobabble.jpg" width="250" height="250" />
-  <br>关注Y叔微信公众账号biobabble
 
-  
   {{ partial "duoshuo.html" . }}
-  
+
   {{ if isset .Site.Params "disqusShortname" }}
     {{ if not (eq .Params.comments false) }}
       {{ partial "disqus.html" . }}
